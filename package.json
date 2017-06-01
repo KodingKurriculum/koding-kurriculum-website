@@ -1,0 +1,42 @@
+{
+    "name": "kk-website",
+    "version": "1.0.0",
+    "description": "The official Koding Kurriculum website",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/KodingKurriculum/kk-website.git"
+    },
+    "keywords": [
+      "koding",
+      "kurriculum",
+      "website",
+      "html",
+      "responsive",
+      "bootstrap"
+    ],
+    "author": "Karl Haviland",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/KodingKurriculum/kk-website/issues"
+    },
+    "homepage": "https://github.com/KodingKurriculum/kk-website#readme",
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "font-awesome": "4.7.0",
+        "jquery": "^3.2.1",
+        "jquery.easing": "^1.4.1",
+        "tether": "^1.4.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.2.0",
+        "gulp-header": "1.8.8",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^2.1.2"
+    }
+}
