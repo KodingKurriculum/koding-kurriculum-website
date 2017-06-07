@@ -1,0 +1,96 @@
+
+/**
+  Primary Background
+**/
+.primary-bg {
+    background-color: #00AC78;
+    color: #fff;
+}
+.primary-bg a {
+    color: #fff;
+}
+.primary-bg a:hover, .primary-bg a:focus, .primary-bg a:active {
+    color: #FFD75A;
+    outline: none;
+}
+.primary-color {
+    color: #00AC78;
+}
+@media (min-width: 992px) {
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+      color: #B94900;
+      background: #FFD75A;
+  }
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active {
+      color: #B94900;
+      background: #FFD75A;
+  }
+}
+
+/**
+  Secondary Background
+**/
+.secondary-bg {
+    background-color: #CFE3DD;
+    color: #00AC78;
+}
+.secondary-bg-accent {
+    background-color: #CFE3DD;
+    border-color: #FFD75A;
+    color: #FFD75A;
+}
+.secondary-bg-accent:after {
+    color: #B94900;
+    background-color: #CFE3DD;
+}
+
+
+/**
+  Tertiary Background
+**/
+.tertiary-bg {
+    background-color: white;
+    color: #00AC78;
+}
+.tertiary-bg-accent {
+    background-color: white;
+    border-color: #FFD75A;
+    color: #FFD75A;
+}
+.tertiary-bg-accent:after {
+    color: #B94900;
+    background-color: white;
+}
+.tertiary-text {
+    color: #B94900;
+}
+
+
+/**
+  Buttons
+**/
+.btn-primary {
+    background-color: #00AC78;
+    color: #fff;
+    border: none;
+}
+.btn-primary:focus, .btn-primary:active, .btn-primary:hover {
+    color: #B94900;
+    background-color: #FFD75A;
+    border: none;
+}
+
+.btn-primary:active, .btn-primary.active, .open>.btn-primary.dropdown-toggle {
+    color: #B94900;
+    border-color: #B94900;
+    background-color: #FFD75A;
+}
+
+/**
+  Menu Toggler
+**/
+#mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus {
+  color: #B94900;
+  border-color: #B94900;
+  background-color: #FFD75A;
+}

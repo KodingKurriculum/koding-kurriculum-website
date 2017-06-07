@@ -2,31 +2,35 @@
 <html lang="en">
 
 <head>
-  <!-- Meta -->
-  <meta charset="utf-8">
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-  <meta name="keywords" content="HTML5 Template Koding Kurriculum" />
-  <meta name="description" content="The official Koding Kurriculum website">
-  <meta name="author" content="Karl Haviland">
+    <meta name="keywords" content="HTML5 Template Koding Kurriculum" />
+    <meta name="description" content="The official Koding Kurriculum website">
+    <meta name="author" content="Karl Haviland">
 
     <title>Koding Kurriculum | Technology + Education</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="node_modules/tether/dist/css/tether.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/colors-1.css" rel="stylesheet">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -46,7 +50,7 @@
 <body class="index" id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+    <nav class="navbar fixed-top navbar-toggleable-md primary-bg" id="mainNav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             Menu <i class="fa fa-bars"></i>
         </button>
@@ -69,21 +73,22 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header class="masthead secondary-bg">
         <div class="container">
-            <img class="img-fluid" src="img/profile.png" alt="">
+            <img class="img-fluid logo" src="img/kodingkurriculum-logo.png" alt="">
             <div class="intro-text">
                 <span class="name">Koding Kurriculum</span>
-                <hr class="star-light">
+                <hr class="star-light secondary-bg-accent">
                 <span class="skills">Bringing the worlds of Technology and Education together.</span>
+            </div>
         </div>
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="our-products">
+    <section id="our-products" class="tertiary-bg">
         <div class="container">
             <h2 class="text-center">Our Products</h2>
-            <hr class="star-primary">
+            <hr class="star-light tertiary-bg-accent">
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
@@ -150,10 +155,10 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about-us">
+    <section class="success secondary-bg" id="about-us">
         <div class="container">
             <h2 class="text-center">About Us</h2>
-            <hr class="star-light">
+            <hr class="star-light secondary-bg-accent">
             <div class="row">
                 <div class="col-lg-5 offset-lg-1">
                     <p>Karl is an embassador for computer science, and believes that anyone can learn to code. He aims to tear down barries that prevents technology from reaching the classroom.</p>
@@ -162,7 +167,7 @@
                     <p>Kristin is an educator with a creative mind for building curriculum that is effective and engaging. She is the perfect representative to advocate for the needs of teachers.</p>
                 </div>
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
+                    <a href="#" class="btn btn-lg btn-primary">
                         <i class="fa fa-chevron-circle-up"></i> Take Our Survey
                     </a>
                 </div>
@@ -171,10 +176,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contribute">
+    <section id="contribute" class="tertiary-bg">
         <div class="container">
             <h2 class="text-center">Contribute</h2>
-            <hr class="star-primary">
+            <hr class="star-light tertiary-bg-accent" >
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -211,7 +216,7 @@
                         <br>
                         <div id="success"></div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Send</button>
                         </div>
                     </form>
                 </div>
@@ -220,16 +225,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="text-center primary-bg">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <p>Technology + Education
-                            <br><a href="mailto:karl@kodingkurriculum.com">karl@kodingkurriculum.com</a>
+                        <p><a href="mailto:karl@kodingkurriculum.com">karl@kodingkurriculum.com</a>
                             <br><a href="mailto:karl@kodingkurriculum.com">kristin@kodingkurriculum.com</a></p>
                     </div>
                     <div class="footer-col col-md-4">
+                        <h4 class="tertiary-text">Technology + Education</h3>
                         <ul class="list-inline">
                             <li class="list-inline-item">
                                 <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
@@ -254,7 +259,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-below">
+        <div class="footer-below secondary-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -304,7 +309,7 @@
                                     </strong>
                                     </li>
                                 </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -343,7 +348,7 @@
                                     </strong>
                                     </li>
                                 </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -382,7 +387,7 @@
                                     </strong>
                                     </li>
                                 </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -421,7 +426,7 @@
                                     </strong>
                                     </li>
                                 </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -460,7 +465,7 @@
                                     </strong>
                                     </li>
                                 </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
@@ -499,7 +504,7 @@
                                     </strong>
                                     </li>
                                 </ul>
-                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                                <button class="btn btn-primary" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
                     </div>
