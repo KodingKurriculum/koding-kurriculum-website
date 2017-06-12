@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 hr.star-light, hr.star-primary {
     max-width: 250px;
     margin: 25px auto 30px;
@@ -61,10 +65,6 @@ hr.star-primary:after {
 
 section {
     padding: 100px 0;
-}
-
-section h2 {
-    font-size: 3em;
     margin: 0;
 }
 
@@ -74,6 +74,10 @@ section h2 {
     }
     section.first {
         padding-top: 75px;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
 
@@ -187,20 +191,20 @@ header.masthead .intro-text .skills {
     }
 }
 
-#portfolio .portfolio-item {
+#our-products .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#our-products .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
+    max-width: 510px;
     margin: 0 auto;
     cursor: pointer;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#our-products .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -211,11 +215,11 @@ header.masthead .intro-text .skills {
     background: rgba(24, 188, 156, 0.9);
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#our-products .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#our-products .portfolio-item .portfolio-link .caption .caption-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -226,15 +230,15 @@ header.masthead .intro-text .skills {
     color: white;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#our-products .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3, #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#our-products .portfolio-item .portfolio-link .caption .caption-content h3, #our-products .portfolio-item .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#portfolio * {
+#our-products * {
     z-index: 2;
 }
 
@@ -323,7 +327,6 @@ header.masthead .intro-text .skills {
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
-    padding-bottom: .5em;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -331,8 +334,7 @@ header.masthead .intro-text .skills {
     font-size: 1.5em;
     position: relative;
     z-index: 1;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0px 0px;
     resize: none;
     border: none;
     border-radius: 0;
