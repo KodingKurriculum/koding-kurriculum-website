@@ -191,20 +191,20 @@ header.masthead .intro-text .skills {
     }
 }
 
+#our-products .open-kurriculum-text {
+    padding-bottom: 1rem;
+}
+
 #our-products .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#our-products .portfolio-item .portfolio-link {
-    position: relative;
-    display: block;
-    max-width: 510px;
-    margin: 0 auto;
+#our-products .portfolio-link {
     cursor: pointer;
 }
 
-#our-products .portfolio-item .portfolio-link .caption {
+#our-products .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -212,14 +212,14 @@ header.masthead .intro-text .skills {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     opacity: 0;
-    background: rgba(24, 188, 156, 0.9);
+    background: #CFE3DD;
 }
 
-#our-products .portfolio-item .portfolio-link .caption:hover {
+#our-products .portfolio-link .caption:hover {
     opacity: 1;
 }
 
-#our-products .portfolio-item .portfolio-link .caption .caption-content {
+#our-products .portfolio-link .caption .caption-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -230,11 +230,11 @@ header.masthead .intro-text .skills {
     color: white;
 }
 
-#our-products .portfolio-item .portfolio-link .caption .caption-content i {
+#our-products .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#our-products .portfolio-item .portfolio-link .caption .caption-content h3, #our-products .portfolio-item .portfolio-link .caption .caption-content h4 {
+#our-products .portfolio-link .caption .caption-content h3, #our-products .portfolio-link .caption .caption-content h4 {
     margin: 0;
 }
 
@@ -394,7 +394,7 @@ footer .footer-below {
 }
 
 .btn-outline {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-top: 15px;
     transition: all .3s ease-in-out;
     color: white;
@@ -402,7 +402,19 @@ footer .footer-below {
     background: transparent;
 }
 
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+.intro-text .btn-outline:hover, .intro-text .btn-outline:focus, .intro-text .btn-outline:active, .intro-text .btn-outline.active {
+    border: solid 2px #00AC78;
+    background: #00AC78;
+    color: white;
+}
+.open-kurriculum-text .btn-outline:hover, .open-kurriculum-text .btn-outline:focus, .open-kurriculum-text .btn-outline:active, .open-kurriculum-text .btn-outline.active {
+    margin-top: .5rem;
+    font-size: 11.5rem;
+    color: #B94900;
+    background-color: #FFD75A;
+    border: none;
+}
+.footer-col .btn-outline:hover, .footer-col .btn-outline:focus, .footer-col .btn-outline:active, .footer-col .btn-outline.active {
     border: solid 2px white;
     background: white;
 }
@@ -425,14 +437,33 @@ footer .footer-below {
 }
 
 .btn-social {
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 45px;
     display: inline-block;
     width: 50px;
     height: 50px;
     text-align: center;
-    border: 2px solid white;
     border-radius: 100%;
+}
+
+.intro-text .btn-social {
+    border: 2px solid #00AC78;
+    color: #00AC78;
+    background-color: white;
+}
+.open-kurriculum-text .btn-social {
+    margin-top: 0rem;
+    width: auto;
+    height: auto;
+    border-radius: 3.5rem;
+    font-size: 11.5rem;
+
+    border: none;
+    color: #00AC78;
+    background-color: white;
+}
+.footer-col .btn-social {
+    border: 2px solid white;
 }
 
 .btn:focus, .btn:active, .btn.active {
