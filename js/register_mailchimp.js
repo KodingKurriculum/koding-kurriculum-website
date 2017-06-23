@@ -1,58 +1,62 @@
 $(function() {
 
-    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+    $("#contributeForm input").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
             // Prevent spam click and default submit behaviour
-            $("#btnSubmit").attr("disabled", true);
+            $("#sign-up").attr("disabled", true);
             event.preventDefault();
-            
+
             // get values from FORM
-            var name = $("input#name").val();
+            var name = $("input#name").val().split(/\s+/);
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
+            var firstName = ''; // For Success/Failure Message
+            var lastName = ''; // For Success/Failure Message
+
             // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
+            if (name.indexOf(' ') >= 0) {
+                firstName = name.slice(0, -1).join(' ');
+                lastName = name.pop();
+            } else {
+                firstName = name;
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "http://kodingkurriculum.us16.list-manage.com/subscribe/post-json?u=28661a979688cf6645769038e&amp;id=5ee3164873&c=?",
                 type: "POST",
+                dataType    : 'jsonp',
+                contentType: "application/json; charset=utf-8",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    FNAME: firstName,
+                    LNAME: lastName,
+                    EMAIL: email
                 },
                 cache: false,
                 success: function() {
                     // Enable button & show success message
-                    $("#btnSubmit").attr("disabled", false);
+                    $("#sign-up").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Thank you for signing up with Koding Kurriculum! Almost finished... To verify your address, please click the link in the email we just sent you.</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#contributeForm').trigger("reset");
                 },
                 error: function() {
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " " + lastName + ", it seems that our registration is not responding. Please try again later!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    $('#contributeForm').trigger("reset");
                 },
             });
         },
